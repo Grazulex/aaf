@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: #d3d3d3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 1px solid;
+    display: flex;
+}
+.room_stats {
+    flex: 50%;
+}
+.room_name {
+    color: #009966;
+}
+
+.server {
+    flex: 50%;
+    text-align: right;
+}
+.date {
+    color: #cccc00;
+}
+
+.guest {
+    color: #6633ff;
+}
+.sleeper {
+    color: #ff0066;
+}
+.treasure {
+    color: #ffd700;
+}
+.healt_add {
+    color: #66ff33;
+}
+.armor_add {
+    color: #66ff33;
+}
+.potion_add {
+    color: #66ff33;
+}
+.step_add {
+    color: #66ff33;
+}
+.king {
+    color: #ffff00;
+}
+.newbie {
+    color: #00ccff;
+}
+.zombie {
+    color: #ff0000;
+}
+.dead {
+    color: #d9d9d9;
+}
+
+.main {
+    border-bottom: 1px solid;
+    flex: 1;
+    display: flex;
+}
+
+.members_flex {
+    flex: 33%;
+    border-right: 1px solid;
+}
+.messages {
+    flex: 66%;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.member_stats {
+    display: flex;
+}
+.member_card {
+    flex: 50%;
+}
+.friend_list {
+    flex: 50%;
+}
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.lifes {
+    width: 100%;
+}
+.deads {
+    width: 100%;
+    border-top: 1px dashed;
+}
+.is_dead {
+    text-decoration: line-through;
+}
+.action {
+    border-radius: 5px;
+    background-color: #ffcce0;
+    text-decoration: none;
+    border: none;
+    box-shadow: 2px 2px #888888;
+}
+.action:hover,
+.action:focus {
+    background-color: #e6005c;
+}
+
+.action:click {
+    background-color: #ffcce0;
+}
+
+.messages {
+    font-size: 12px;
+}
+
+.messages_flex,
+.members_flex {
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh);
+}
+
+.messages_list,
+.members_list {
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+}
+
+.messages > li {
+    display: flex;
+    justify-content: right;
+}
